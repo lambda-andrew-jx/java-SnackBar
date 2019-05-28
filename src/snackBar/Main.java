@@ -55,6 +55,38 @@ public class Main
         pretzel.buy(3);
         System.out.println("Bob's money: " + bob.getCash());
         System.out.println("Pretzels left: " + pretzel.getQuantity());
+        System.out.println("\n");
+
+        System.out.println(chips.getName());
+        System.out.println("Vending Machine: " + food.getName());
+        System.out.println("Quantity on hand: " + chips.getQuantity());
+        System.out.println("Total cost for all: " + chips.getTotalCost(chips.getQuantity()));
+        System.out.println("\n");
+
+        System.out.println(chocolateBar.getName());
+        System.out.println("Vending Machine: " + food.getName());
+        System.out.println("Quantity on hand: " + chocolateBar.getQuantity());
+        System.out.println("Total cost for all: " + chocolateBar.getTotalCost(chocolateBar.getQuantity()));
+        System.out.println("\n");
+
+        System.out.println(pretzel.getName());
+        System.out.println("Vending Machine: " + food.getName());
+        System.out.println("Quantity on hand: " + pretzel.getQuantity());
+        System.out.println("Total cost for all: " + pretzel.getTotalCost(pretzel.getQuantity()));
+        System.out.println("\n");
+
+        System.out.println(soda.getName());
+        System.out.println("Vending Machine: " + drink.getName());
+        System.out.println("Quantity on hand: " +soda.getQuantity());
+        System.out.println("Total cost for all: " + soda.getTotalCost(soda.getQuantity()));
+        System.out.println("\n");
+
+        System.out.println(water.getName());
+        System.out.println("Vending Machine: " + drink.getName());
+        System.out.println("Quantity on hand: " + water.getQuantity());
+        System.out.println("Total cost for all: " + water.getTotalCost(water.getQuantity()));
+        System.out.println("\n");
+
     }
 
     public static void main(String[] args)
