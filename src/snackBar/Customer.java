@@ -5,6 +5,7 @@ public class Customer
     private static int maxID = 0;
     private int id;
     private String name;
+    private double cash;
 
     public Customer(String name, double cash)
     {
@@ -29,22 +30,22 @@ public class Customer
         return this.cash;
     }
 
-    public int setID()
+    public void setID()
     {
         this.id = ++maxID;
     }
 
-    public String setName(String name)
+    public void setName(String name)
     {
         this.name = name;
     }
 
-    public double addCash(double addedCash)
+    public void addCash(double addedCash)
     {
         this.cash += addedCash;
     }
 
-    public double buy(double amount)
+    public void buy(double amount)
     {
         this.cash -= amount;
     }

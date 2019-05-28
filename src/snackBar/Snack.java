@@ -44,32 +44,32 @@ public class Snack
         return vendingMachineID;
     }
 
-    public int setID()
+    public void setID()
     {
         this.id = ++maxID;
     }
 
-    public String setName(String name)
+    public void setName(String name)
     {
         this.name = name;
     }
 
-    public double setCost(double cost)
+    public void setCost(double cost)
     {
         this.cost = cost;
     }
 
-    public int setVendingMachineID(int vendingMachineID)
+    public void setVendingMachineID(int vendingMachineID)
     {
         this.vendingMachineID = vendingMachineID;
     }
 
-    public int addQuantity(int add)
+    public void addQuantity(int add)
     {
         this.quantity += add;
     }
 
-    public int buy(int num)
+    public void buy(int num)
     {
         this.quantity -= num;
     }

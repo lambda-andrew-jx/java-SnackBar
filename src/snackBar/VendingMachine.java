@@ -23,12 +23,12 @@ public class VendingMachine
         return this.name;
     }
 
-    public int setID()
+    public void setID()
     {
         this.id = ++maxID;
     }
 
-    public String setName(String name)
+    public void setName(String name)
     {
         this.name = name;
     }
