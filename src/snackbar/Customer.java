@@ -13,22 +13,29 @@ public class Customer
 		maxId++;
 		this.id = maxId;
 		this.name = name;
-		this.cashOnHand = cashOnHand;
+		this.cash = cash;
 	}
 
-	public double setCash(double cashOnHand, double price)
+	public String getName()
 	{
-		if(cashOnHand == price)
-		{
-			this.cashOnHand = cashOnHand - price;
-		}else
-		{
-            this.cashOnHand = cashOnHand;
-		}
-		return cashOnHand;
+		return name;
+	}
+
+	public void setName(String name)
+	{
+		this.name = name;
 	} 
-	// public double setCashOnHand(double cashOnHand)
-	// {
-	// 	this.cashOnHand = cashOnHand;
-	// }
+
+	public void getCash()
+	{
+		return cash;
+	}
+
+	public void buySnack(double cash)
+	{
+		double cashOnPocket = this.cash;
+		this.cash = cash;
+
+		System.out.println(this.name + "has $" + cashOnPocket + "and now has $ " + cash + " left \n");
+	}
 }

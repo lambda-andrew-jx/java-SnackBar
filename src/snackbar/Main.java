@@ -18,6 +18,8 @@ public class Main
     	Snack soda = new Snack("Soda", 24, 2.5, drink.id);
     	Snack water = new Snack("Water", 20, 2.75, drink.id);
 
+    	System.out.println("***Query Data");
+
 
 
 
