@@ -3,13 +3,14 @@ package snackbar;
 public class Customer
 {
 	private static int maxId = 0;
+	private int id;
 	private String name;
 	private double cashOnHand;
-	private 
+	
 
 	public Customer(String name, double cashOnHand)
 	{
-		maxId++
+		maxId++;
 		this.id = maxId;
 		this.name = name;
 		this.cashOnHand = cashOnHand;
@@ -24,10 +25,10 @@ public class Customer
 		{
             this.cashOnHand = cashOnHand;
 		}
-	}
-
-	public void getCashOnHand()
-	{
 		return cashOnHand;
-	}
+	} 
+	// public double setCashOnHand(double cashOnHand)
+	// {
+	// 	this.cashOnHand = cashOnHand;
+	// }
 }

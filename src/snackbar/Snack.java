@@ -14,9 +14,9 @@ public class Snack
 		maxId++;
 		id = maxId;
 		this.name = name;
-		this.quentity = quantity;
+		this.quantity = quantity;
 		this.price = price;
-		this vmId = vmId;
+		this.vmId = vmId;
 	}
 
     public int getId()
