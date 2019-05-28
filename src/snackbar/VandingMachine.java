@@ -2,12 +2,13 @@ package snackbar
 
 public class VendingMachine
 {
-	private int id;
+	private static int maxId = 0;
     private String name;
 
     public VendingMachine( int id, String name)
     {
-    	this.id = id;
+        maxId++;
+    	this.id = maxId;
     	this.name = name;
     }
 
@@ -16,18 +17,13 @@ public class VendingMachine
     	return id;
     }
 
-    public void setId(int newId)
-    {
-    	this.id = newId;
-    }
-
     public String getName()
     {
     	return name;
     }
 
-    public void setName(String newName)
+    public void setName(String name)
     {
-    	this.name = newName;
+    	this.name = name;
     }
 }

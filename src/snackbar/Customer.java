@@ -19,12 +19,15 @@ public class Customer
 	{
 		if(cashOnHand == price)
 		{
-			this.cashOnHand = cashOnHand - price
-		}else(cashOnHand > price)
+			this.cashOnHand = cashOnHand - price;
+		}else
 		{
             this.cashOnHand = cashOnHand;
 		}
 	}
 
-	
+	public void getCashOnHand()
+	{
+		return cashOnHand;
+	}
 }
