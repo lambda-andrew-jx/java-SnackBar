@@ -6,14 +6,13 @@ public class Snack {
 	private static int maxId = 0;
 
 	public int id;
-	public String firstName;
-	public String lastName;
+	public String name;
 	public int quantity;
 	public double cost;
 	public int vendingMachineId;
 
 	// constructor
-	public Snack(String firstName, String lastName, int quantity, double cost, int vendingMachineId) {
+	public Snack(String name, int quantity, double cost, int vendingMachineId) {
 		this.id = maxId++;
 		this.name = name;
 		this.quantity = quantity;

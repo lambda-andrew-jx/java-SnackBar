@@ -8,7 +8,7 @@ public class Customer {
 	private String name;
 	private double cash;
 
-	public Custome(String name, double cash) {
+	public Customer(String name, double cash) {
 		this.id = maxId++;
 		this.name = name;
 		this.cash = cash;
@@ -25,5 +25,5 @@ public class Customer {
 	//other methods
 	public void addCash(double newCash) { this.cash += newCash; }
 
-	
+	public void buy(double cashUsed) { this.cash -= cashUsed; }
 }	
