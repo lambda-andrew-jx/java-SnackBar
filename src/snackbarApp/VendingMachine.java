@@ -16,7 +16,7 @@ public class VendingMachine
 
     public int getId()
     {
-        return Id;
+        return id;
     }
 
     public void setId(int id)

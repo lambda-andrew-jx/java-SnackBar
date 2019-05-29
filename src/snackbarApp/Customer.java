@@ -16,14 +16,14 @@ public class Customer
         this.cashOnHand = cashOnHand;
     }
 
-    public double addCash(double cashOnHand, double newAmt)
+    public double addCash(double cashAdd)
     {
-        return this.cashOnHand += newAmt;
+        return this.cashOnHand += cashAdd;
     }
 
-    public void buy(float total)
+    public void buy(double total)
     {
-        this.cashOnHand = cashOnHand - total;
+        this.cashOnHand -= total;
     }
 
     public String getName()
@@ -31,11 +31,20 @@ public class Customer
         return name;
     }
 
+    public int getId()
+    {
+        return id;
+    }
+
     public void setName(String name)
     {
         this.name = name;
     }
 
+    public void setId(int id)
+    {
+        this.id = id;
+    }
     public double getCashOnHand()
     {
         return cashOnHand;
