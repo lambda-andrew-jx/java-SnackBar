@@ -19,11 +19,6 @@ public class Snack
 		this.vmId = vmId;
 	}
 
-    public int getId()
-    {
-    	return id;
-    }
-
     public String getName()
     {
     	return name;
@@ -32,6 +27,11 @@ public class Snack
     public void setName(String name)
     {
     	this.name = name;
+    }
+
+    public double getQuantity()
+    {
+    	return quantity;
     }
 
     public double getPrice()
@@ -44,34 +44,45 @@ public class Snack
     	this.price = price;
     }
 
-    public int getVmId()
+    public int getVmId(int vmId)
     {
     	return vmId;
     }
 
     public void setVmId(int vmId)
     {
-    	this.vmId = vmId;
+        this.vmId = vmId;
     }
 
-    public int getQuantity()
+    public void addQuantity(int quantity)
     {
-        return quantity;
+        if(quantity > 0)
+        {
+            this.quantity += 0;
+        }else
+        {
+            System.out.println("Need to restock");
+        }
     }
 
-    public void addQuantity(int quantity, int newQuantity)
+    public double buySnack(double custCoins, int numOfItem)
     {
-        this.quantity = quantity + newQuantity;
+        if(numOfItem <= this.quantity && this.price <= custCoins)
+        {
+            System.out.println("Your Total Is $" + getTotalPrice(numOfItem));
+            this.quantity = this.quantity - numOfItem;
+            System.out.println(this.quantity + " of this" + " " + this.name + " left in stock \n");
+            return custCoins - getTotalPrice(numOfItem);
+        }else 
+        {
+            System.out.println("Not money enough");
+        }
+        return custCoins;
     }
 
-    public void buySnack(int quantity, int newQuantity)
+    private double getTotalPrice(int numOfItem)
     {
-        this.quantity = quantity - newQuantity;
-    }
-
-    public void addMoney(double price, double newPrice)
-    {
-        this.price = price + newPrice;
+        return numOfItem * this.price;
     }
 
 

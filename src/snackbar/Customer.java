@@ -5,10 +5,10 @@ public class Customer
 	private static int maxId = 0;
 	private int id;
 	private String name;
-	private double cashOnHand;
+	private double cash;
 	
 
-	public Customer(String name, double cashOnHand)
+	public Customer(String name, double cash)
 	{
 		maxId++;
 		this.id = maxId;
@@ -26,16 +26,16 @@ public class Customer
 		this.name = name;
 	} 
 
-	public void getCash()
+	public double getCash()
 	{
 		return cash;
 	}
 
-	public void buySnack(double cash)
+	public void setCash(double cash)
 	{
 		double cashOnPocket = this.cash;
 		this.cash = cash;
 
-		System.out.println(this.name + "has $" + cashOnPocket + "and now has $ " + cash + " left \n");
+		System.out.println(this.name + " " + "had $" + " " + cashOnPocket + " and now has $" + cash + " left \n");
 	}
 }
