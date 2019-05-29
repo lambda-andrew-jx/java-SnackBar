@@ -52,8 +52,17 @@ public class Main
         System.out.println("There are " + snack2.getQuantity() + " chocolate bars left");
         System.out.println();
 
-        
+        System.out.println("*** add 12 more ***");
+        snack3.addQuantity(12);
+        System.out.println("There are " + snack3.getQuantity() + " pretzels left");
+        System.out.println();
 
+        System.out.println("*** Customer 2 buys 3 of snack 3 ***");
+        customer2.buy(snack3.getTotal(3));
+        snack3.buy(3);
+        System.out.println(customer2.getName() + " has $" + customer2.getCashOnHand());
+        System.out.println("There are " + snack3.getQuantity() + " pretzels left");
+        
     }
 
     public static void main(String[] args)
