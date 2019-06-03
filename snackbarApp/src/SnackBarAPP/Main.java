@@ -4,12 +4,12 @@ public class Main
 {
     private static void workWithData()
     {
-        Customer C1 = new Customer("Jane");
-        Customer C2 = new Customer("Bob");
+        Customer C1 = new Customer("Jane", 45.25);
+        Customer C2 = new Customer("Bob", 33.14);
 
-        VendingMachine V1 = new VendingMachine("Food");
-        VendingMachine V2 = new VendingMachine("Drink");
-        VendingMachine V3 = new VendingMachine("Office");
+        VendingMachine Food = new VendingMachine("chips", 36, 1.75);
+        VendingMachine Drink = new VendingMachine("Drink");
+        VendingMachine Office = new VendingMachine("Office");
     }
     public static void main(String[] args)
     {
