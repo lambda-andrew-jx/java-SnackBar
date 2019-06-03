@@ -46,6 +46,10 @@ public class Main
 
         System.out.println("customer 1 has " + cust1.getCashOnHand() + " dollars left in hand");
         System.out.println("there are " + snack2.getQuantity() + " units left of snack 2 in the vending machine");
+
+        snack3.addSnack(12);
+
+        System.out.println("there are " + snack3.getQuantity() + " units left of snack 3 in the vending machine");
     }
 
     public static void main(String[] args)
