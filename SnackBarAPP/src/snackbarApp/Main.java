@@ -30,6 +30,12 @@ public class Main
 
         System.out.println("customer 1 has " + cust1.getCashOnHand() + " dollars left in hand");
         System.out.println("there are " + snack3.getQuantity() + " units left of snack 3 in the vending machine");
+
+        snack4.buySnack(2);
+        cust2.buySnack(snack4.totalCost(2.50, 2));
+
+        System.out.println("customer 2 has " + cust2.getCashOnHand() + " dollars left in hand");
+        System.out.println("there are " + snack4.getQuantity() + " units left of snack 4 in the vending machine");
     }
 
     public static void main(String[] args)
