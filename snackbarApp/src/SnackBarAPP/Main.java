@@ -1,4 +1,4 @@
-package java-SnackBar;
+package SnackBarAPP; 
 
 public class Main
 {
@@ -12,3 +12,10 @@ public class Main
     }
 
 }
+
+
+
+//public void buySnack(int quantity)
+//{
+   // this.quanity -= quantity
+//}
