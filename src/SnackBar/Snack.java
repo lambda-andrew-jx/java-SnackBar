@@ -5,9 +5,9 @@ public class Snack
     private static int maxId = 0;
     private int id;
     private String name;
-    private double quantity;
+    private int quantity;
     private double cost;
-    // vid = vendor id
+    // vid = vending id
     private int vid;
 
     public Snack(String name, double quantity, double cost, int vid )
@@ -19,6 +19,16 @@ public class Snack
         this.quantity = quantity;
         this.cost = cost;
         this.vid = vid;
+    }
+
+    public int getId()
+    {
+        return id;
+    }
+
+    public setId(int id)
+    {
+        this.id = id;
     }
 
     public String getName()
@@ -36,17 +46,12 @@ public class Snack
         return quantity;
     }
 
-    public double setQuantity(double quantity)
-    {
-        this.quantity = quantity;
-    }
-
     public double getCost()
     {
         return cost;
     }
 
-    public double setCost(double cost)
+    public void setCost(double cost)
     {
         this.cost = cost;
     }
@@ -56,20 +61,19 @@ public class Snack
         return vid;
     }
 
-    public int setVid(int vid)
+    public void setVid(int vid)
     {
         this.vid = vid;
     }
 
-    @Override
-    public String toString()
+    public void addSnack(int amount)
     {
-        String rtnStr = "id: " + id + "\n" +
-                         "name: " + name + "\n" +
-                         "quantity: " + quantity + "\n" +
-                         "cost: " + cost + "\n" +
-                         "vid: " + vid + "\n";
-        return rtnStr;
+        this.quantity += amount;
+    }
+
+    public void buySnack(int amount)
+    {
+        this.quantity -= amount;
     }
 }
 
