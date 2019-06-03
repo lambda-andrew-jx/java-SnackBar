@@ -11,11 +11,16 @@ public class Customer
    {
       maxID++;
       id=maxID;
-      
       this.name = name;
       this.cashonhand = cashonhand;
    }
-      //getters
+      
+   //getters and setters
+
+      public int getID()
+      {
+         return id;
+      }
       public String getName()
       {
          return name;
@@ -23,6 +28,10 @@ public class Customer
       public void setName(String name)
       {
          this.name = name;
+      }
+      public double getCashOnHand()
+      {
+         return getcashonhand;
       }
 
 }
