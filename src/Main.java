@@ -19,7 +19,33 @@ public class Main {
 
         Snack s4= new Snack ('Soda', 24, 2.50, v2.getId());
         Snack s5=new Snack ('Water',20, 2.75, v2.getId());
-      
-    }
 
+        c1.buySnack(3, s4);
+        System.out.println("Cash on Hand of Jane (Customer1)" + c1.getCashOnHand());
+        System.out.println("Quantity of Snack 4" + s4.getQuantity());
+
+        c1.buySnack(1, s3);
+        System.out.println('Cash on Hand of Jane (Customer1)' + c1.getCashOnHand());
+        System.out.println('Quantity of Snack3' + s3.getQuantity());
+
+        c2.buySnack(2, s4);
+        System.out.println("Cash on Hand of Bob (Customer2)" + c2.getCashOnHand());
+        System.out.println('Quantity of Snack4' + s4.getQuantity());
+
+        c1.addCash(10.00);
+        System.out.println("Cash on Hand of Jane (Customer1)" + c1.getCashOnHand());
+        System.out.println('Quantity of Snack4' + s4.getQuantity());
+
+        c1.buySnack(1, s2);
+        System.out.println("Cash on Hand of Jane (Customer1)" + c1.getCashOnHand());
+        System.out.println('Quantity of Snack2' + s2.getQuantity());
+
+        s3.addQuantity(12);
+        System.out.println('Quantity of Snack3' + s3.getQuantity());
+
+        c2.buySnack(3,s3);
+        System.out.println("Cash on Hand of Bob (Customer2)" + c2.getCashOnHand());
+        System.out.println('Quantity of Snack3' + s3.getQuantity());
+
+    }
 }
