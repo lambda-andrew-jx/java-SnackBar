@@ -1,4 +1,4 @@
-package JAVA-SNACKBAR;
+package java-SnackBar;
 
 public class Customers
 {
