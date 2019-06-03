@@ -56,6 +56,17 @@ public class Main
 
         System.out.println("customer 2 has " + cust2.getCashOnHand() + " dollars left in hand");
         System.out.println("there are " + snack3.getQuantity() + " units left of snack 3 in the vending machine");
+        
+        System.out.println(snack1);
+        System.out.println(snack1.totalCost(snack1.getCost(), snack1.getQuantity()));
+        System.out.println(snack2);
+        System.out.println(snack2.totalCost(snack2.getCost(), snack2.getQuantity()));
+        System.out.println(snack3);
+        System.out.println(snack3.totalCost(snack3.getCost(), snack3.getQuantity()));
+        System.out.println(snack4);
+        System.out.println(snack4.totalCost(snack4.getCost(), snack4.getQuantity()));
+        System.out.println(snack5);
+        System.out.println(snack5.totalCost(snack5.getCost(), snack5.getQuantity()));
     }
 
     public static void main(String[] args)
