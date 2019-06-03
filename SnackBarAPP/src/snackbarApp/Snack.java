@@ -10,6 +10,10 @@ public class Snack
     private double cost;
     private int vendingID;
 
+    public static int addQuanity;
+    public static double buySnacks;
+    public static double totalCost;
+
     public Snack(String name, int quanitity, double cost, int vendingID)
     {
         maxId++;
