@@ -75,5 +75,10 @@ public class Snack
     {
         this.quantity -= amount;
     }
+
+    public double getTotalCost(int amount)
+    {
+        return amount * this.cost;
+    }
 }
 

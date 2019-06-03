@@ -40,7 +40,7 @@ Snack has methods (so can)
 Vending machine has fields (so knows)
 * id
 * name 
-
+0.........................
 Vending Machine has methods (so can)
 * set and get id
 * set and get name

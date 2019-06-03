@@ -26,7 +26,7 @@ public class VendingMachine
         return name;
     }
 
-    public setName(string, name)
+    public setName(String name)
     {
         this.name = name;
     }
