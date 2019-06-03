@@ -40,6 +40,12 @@ public class Main
         cust1.addCash(10);
 
         System.out.println("customer 1 has " + cust1.getCashOnHand() + " dollars left in hand");
+
+        snack2.buySnack(1);
+        cust1.buySnack(snack2.totalCost(1, 1));
+
+        System.out.println("customer 1 has " + cust1.getCashOnHand() + " dollars left in hand");
+        System.out.println("there are " + snack2.getQuantity() + " units left of snack 2 in the vending machine");
     }
 
     public static void main(String[] args)
