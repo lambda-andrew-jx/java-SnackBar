@@ -6,21 +6,17 @@ public class Snack
     private static int maxId = 0;
     private int id;
     private String name;
-    private int quanitity;
+    private int quantity;
     private double cost;
     private int vendingID;
 
-    public static int addQuanity;
-    public static double buySnacks;
-    public static double totalCost;
-
-    public Snack(String name, int quanitity, double cost, int vendingID)
+    public Snack(String name, int quantity, double cost, int vendingID)
     {
         maxId++;
         id = maxId;
 
         this.name = name;
-        this.quanitity = quanitity;
+        this.quantity = quantity;
         this.cost = cost;
         this.vendingID = vendingID;
     }
@@ -46,9 +42,9 @@ public class Snack
         return quanitity;
     }
 
-    public void setQuanitity(int quanitity)
+    public void setQuantity(int quantity)
     {
-        this.quanitity = quanitity;
+        this.quantity = quantity;
     }
 
     public double getCost()
@@ -66,8 +62,23 @@ public class Snack
         return vendingID;
     }
 
-    public void setVendingID()
+    public void setVendingID(int vendingID)
     {
         this.vendingID = vendingID;
+    }
+
+    public void addSnack(int quantity)
+    {
+        this.quantity += quantity;
+    }
+
+    public void buySnack(int quantity)
+    {
+        this.quantity -= quantity; 
+    }
+
+    public void totalCost(double cost, int quantity)
+    {
+        this.cost = (cost * quantity);
     }
 }
