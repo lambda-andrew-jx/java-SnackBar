@@ -18,8 +18,11 @@ public class Main
        Snack snack4 = new Snack("Soda", 24, 2.50, vm2.getId());
        Snack snack5 = new Snack("Water", 20, 2.75, vm2.getId());
 
-       System.out.println(snack4.buySnack(3));
-       System.out.println(cust1.buySnack(snack4.totalCost(2.50, 3););)
+        snack4.buySnack(3);
+        cust1.buySnack(snack4.totalCost(2.50, 3));
+
+        System.out.println("customer 1 has " + cust1.getCashOnHand() + " dollars left in hand");
+        System.out.println("there are " + snack4.getQuantity() + " units left of snack 4 in the vending machine");
     }
 
     public static void main(String[] args)
