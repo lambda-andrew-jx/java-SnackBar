@@ -33,4 +33,14 @@ public class Customer
     {
         return cashOnHand;
     }
+
+    public void addCash(double cashOnHand)
+    {
+        this.cashOnHand += cashOnHand;
+    }
+
+    public void buySnack(double cashOnHand)
+    {
+        this.cashOnHand -= cashOnHand;
+    }
 }
