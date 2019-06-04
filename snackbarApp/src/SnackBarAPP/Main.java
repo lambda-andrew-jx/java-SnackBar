@@ -7,9 +7,13 @@ public class Main
         Customer C1 = new Customer("Jane", 45.25);
         Customer C2 = new Customer("Bob", 33.14);
 
-        VendingMachine Food = new VendingMachine("chips", 36, 1.75);
-        VendingMachine Drink = new VendingMachine("Drink");
-        VendingMachine Office = new VendingMachine("Office");
+        VendingMachine V1 = new VendingMachine("Food");
+        VendingMachine V2 = new VendingMachine("Drink");
+        VendingMachine V3 = new VendingMachine("Office");
+
+        Snack S1 = new Snack ("chips", "Food", 36, 1.75);
+        Snack S2 = new Snack ("chocolatte bar", "Food", 36, 1.00);
+        Snack S3 = new Snack ("pretzel", "Food", 30, 2.00);
     }
     public static void main(String[] args)
     {

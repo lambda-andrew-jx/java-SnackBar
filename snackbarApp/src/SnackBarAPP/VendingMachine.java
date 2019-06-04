@@ -2,15 +2,23 @@ package SnackBarAPP;
 
 public class VendingMachine 
 {
-    public String name;
-    public int quantity;
-    public double price;
+    private static int maxId = 0;
+    private String type;
+    
 
-    public VendingMachine(String name, int quantity, double price)
+    private VendingMachine(String type)
     {
-
-    this.name = name;
-    this.quantity = quantity;
-    this.price = price;
+    maxId++;
+    id = maxId;
+    this.type = type;
+   
+    }
+    public int getID()
+    {
+        return id;
+    }
+    public String gettype()
+    {
+        return type;
     }
 }
