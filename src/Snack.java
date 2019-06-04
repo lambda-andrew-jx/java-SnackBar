@@ -4,17 +4,20 @@ public class Snack {
     private int id;
     private String name;
     private int quantity;
-    private double costInCents;
+    private double cost;
     private int vendingMachineId;
+    //field
+    //It's private because you don't want to change this
 
-    public Snack(String name, int quantity, int costInCents, int vendingMachineId) {
+    public Snack(String name, int quantity, double costInCents, int vendingMachineId) {
         maxId++;
         this.id = maxId;
         this.name = name;
         this.quantity = quantity;
-        this.costInCents = costInCents;
+        this.cost = costInCents;
         this.vendingMachineId = vendingMachineId;
     }
+    //constructor
 
     public int getId() {
         return id;
@@ -25,7 +28,7 @@ public class Snack {
     }
 
     public void setName(String name) {
-        this.name = name;
+            this.name = name;
     }
 
     public int getQuantity()
@@ -38,13 +41,12 @@ public class Snack {
         this.quantity = quantity;
     }
 
-
-    public double getCostInCents(){
-       return costInCents;
+    public double getCost(){
+       return cost;
     }
 
-    public void setCostInCents(double costInCents) {
-        this.costInCents = costInCents;
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 
     public int getVendingMachineId() {
@@ -65,8 +67,13 @@ public class Snack {
 
     public double getTotalCost(int quantity)
     {
-        return costInCents * quantity;
+        return cost * quantity;
     }
-
-
+    public void printSnackInfo ()
+    {
+        System.out.println("name:" + this.name);
+        System.out.println("vendingMachineId:"+ this.vendingMachineId);
+        System.out.println("Quantity:" +this.quantity);
+        System.out.println("The left over:" +this.cost*this.quantity);
+    }
 }
