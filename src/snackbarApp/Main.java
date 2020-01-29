@@ -62,6 +62,17 @@ public class Main
         snack3.buy(3);
         System.out.println(customer2.getName() + " has $" + customer2.getCashOnHand());
         System.out.println("There are " + snack3.getQuantity() + " pretzels left");
+
+        //stretch 
+        System.out.println("**** stretch ****");
+        System.out.println(snack1.toString());
+        System.out.println(snack2);
+        System.out.println(snack3);
+        System.out.println(snack4);
+        System.out.println(snack5);
+
+        System.out.println("vendingmachine 1");
+        System.out.println(vendingMachine1.getName());
         
     }
 
